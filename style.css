@@ -156,3 +156,18 @@ h6 {
   font-weight: 500;
   line-height: 1.65;
 }
+
+.offer-banner {
+  background-color: var(--purple-700);
+  padding: 18px 67px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+  color: #fff;
+  text-align: center;
+
+  span {
+    font-weight: 700;
+  }
+}
