@@ -18,6 +18,9 @@
 } */
 
 body {
+  background-image: url(assets/images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   /* 4. Add accessible line-height */
   line-height: 1;
   /* 5. Improve text rendering */
