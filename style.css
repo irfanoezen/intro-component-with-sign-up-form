@@ -73,6 +73,7 @@ body {
   background-image: url(assets/images/bg-intro-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: var(--red-400);
   font-family: "Poppins";
   /* 4. Add accessible line-height */
@@ -225,5 +226,28 @@ input[type="submit"] {
 
   span {
     color: var(--red-400);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("assets/images/bg-intro-desktop.png");
+  }
+
+  .main {
+    padding: 89px 114px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .form {
+    padding: 32px 40px;
+    gap: 24px;
+  }
+
+  .terms {
+    margin-block-start: -16px;
   }
 }
