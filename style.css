@@ -251,3 +251,24 @@ input[type="submit"] {
     margin-block-start: -16px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .main {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 48px;
+  }
+
+  .heading,
+  .content {
+    flex: 1;
+  }
+
+  .heading {
+    text-align: left;
+  }
+
+  .text {
+    max-width: 50ch;
+  }
+}
