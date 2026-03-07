@@ -197,6 +197,12 @@ input[type="password"] {
   letter-spacing: 0.25px;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: solid 1px var(--purple-700);
+}
+
 input[type="submit"] {
   padding: 16px 32px;
   border: none;
