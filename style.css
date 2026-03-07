@@ -74,6 +74,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-color: var(--red-400);
   font-family: "Poppins";
   /* 4. Add accessible line-height */
