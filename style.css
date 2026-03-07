@@ -1,3 +1,14 @@
+:root {
+  --gray-900: #3D3B48;
+  --gray-200: #DEDEDE;
+  --purple-700: #5E54A4;
+  --purple-400: #A6A1CF;
+  --purple-350: #BAB7D4;
+  --green-400: #38CC8B;
+  --green-300: #77E2B3;
+  --red-400: #FF7979;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
