@@ -141,4 +141,18 @@ h6 {
 
 .heading {
   text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin-block-end: 16px;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 1.65;
 }
