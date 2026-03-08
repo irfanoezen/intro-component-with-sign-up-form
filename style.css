@@ -205,6 +205,7 @@ input[type="password"]:focus {
 }
 
 input[type="submit"] {
+  cursor: pointer;
   padding: 16px 32px;
   border: none;
   border-radius: 5px;
