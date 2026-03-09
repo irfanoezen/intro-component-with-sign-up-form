@@ -44,19 +44,6 @@ function showErrorMessage(input) {
   }
   input.after(errorMessage);
 }
-/*
-showErrorMessage(firstName);
-console.log(errorMessage.innerHTML);
-
-showErrorMessage(lastName);
-console.log(errorMessage.innerHTML);
-
-showErrorMessage(email);
-console.log(errorMessage.innerHTML);
-
-showErrorMessage(password);
-console.log(errorMessage.innerHTML);
-*/
 
 const firstName = document.querySelector("#firstName");
 const lastName = document.querySelector("#lastName");
