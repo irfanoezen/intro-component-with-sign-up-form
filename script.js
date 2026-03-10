@@ -2,6 +2,7 @@
 
 function showErrorMessage(input) {
   const errorMessage = document.createElement("p");
+  errorMessage.classList.add("error-message");
   if (input.validity.valueMissing) {
     // If value empty
     // Check which type of input
@@ -39,10 +40,11 @@ function showErrorMessage(input) {
         break;
     }
   }
-  if (input.nextElementSibling?.tagName === "P") {
-    input.nextElementSibling.remove();
+
+  if (input.parentElement.nextElementSibling?.tagName === "P") {
+    input.parentElement.nextElementSibling.remove();
   }
-  input.after(errorMessage);
+  input.parentElement.after(errorMessage);
 }
 
 const firstName = document.querySelector("#firstName");
@@ -60,10 +62,12 @@ form.addEventListener("submit", (event) => {
     if (!inputField.validity.valid) {
       // display an appropriate error message
       showErrorMessage(inputField);
+      inputField.parentElement.classList.add("input-user-invalid")
       // prevent form submission
       event.preventDefault();
-    } else if (inputField.nextElementSibling?.tagName === "P") {
-      inputField.nextElementSibling.remove();
+    } else if (inputField.parentElement.nextElementSibling?.tagName === "P") {
+      inputField.parentElement.nextElementSibling.remove();
+      inputField.parentElement.classList.remove("input-user-invalid")
     }
   });
 });

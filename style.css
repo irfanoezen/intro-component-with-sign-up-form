@@ -181,9 +181,14 @@ h6 {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 15%);
-  display: flex;
+  display: grid;
   flex-direction: column;
   row-gap: 16px;
+}
+
+.input-wrapper {
+  display: grid;
+  position: relative;
 }
 
 input[type="text"],
@@ -196,6 +201,7 @@ input[type="password"] {
   color: var(--gray-900);
   line-height: 26px;
   letter-spacing: 0.25px;
+  width: 100%;
 }
 
 input[type="text"]:focus,
@@ -220,6 +226,15 @@ input[type="submit"] {
 
 input:user-invalid {
   border: solid 2px red;
+  color: var(--red-400);
+}
+
+.input-wrapper.input-user-invalid::after {
+  content: url("assets/images/icon-error.svg");
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 375px) {
@@ -239,6 +254,16 @@ input:user-invalid {
   span {
     color: var(--red-400);
   }
+}
+
+.error-message {
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--red-400);
+  margin-block-start: -8px;
+  justify-self: right;
 }
 
 @media screen and (min-width: 768px) {

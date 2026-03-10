@@ -17,10 +17,18 @@
       <div class="content">
         <div class="offer-banner"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
         <form action="" class="form" novalidate>
-          <input type="text" name="" id="firstName" placeholder="First Name*" required pattern="^[A-Z][a-z]{3,7}$" />
-          <input type="text" name="" id="lastName" placeholder="Last Name*" required pattern="^[A-Z][a-z]{3,7}$"/>
-          <input type="email" name="" id="email" placeholder="Email Address*" required />
-          <input type="password" name="" id="password" placeholder="Password" required />
+          <div class="input-wrapper">
+            <input type="text" name="" id="firstName" placeholder="First Name*" required pattern="^[A-Z][a-z]{3,7}$" />
+          </div>
+          <div class="input-wrapper">
+            <input type="text" name="" id="lastName" placeholder="Last Name*" required pattern="^[A-Z][a-z]{3,7}$" />
+          </div>
+          <div class="input-wrapper">
+            <input type="email" name="" id="email" placeholder="Email Address*" required />
+          </div>
+          <div class="input-wrapper">
+            <input type="password" name="" id="password" placeholder="Password" required />
+          </div>
           <input type="submit" value="Claim your free trial" />
           <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </form>
